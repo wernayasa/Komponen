@@ -1,0 +1,129 @@
+<footer class='[grid-area:footer] bg-gray-900 text-white'>
+<b:section class='mt-[30px] text-center leading-[20px] text-xs' id='footermenu' showaddelement='true'>
+  <b:widget id='LinkList1' locked='false' title='Link List Footer' type='LinkList' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='text-30'>Shounen</b:widget-setting>
+      <b:widget-setting name='text-31'>Slice of Life</b:widget-setting>
+      <b:widget-setting name='text-32'>Sports</b:widget-setting>
+      <b:widget-setting name='link-38'>search/label/Vampire</b:widget-setting>
+      <b:widget-setting name='text-26'>School Life</b:widget-setting>
+      <b:widget-setting name='link-35'>search/label/Tragedy</b:widget-setting>
+      <b:widget-setting name='text-27'>Sci-Fi</b:widget-setting>
+      <b:widget-setting name='link-34'>search/label/Thriller</b:widget-setting>
+      <b:widget-setting name='text-28'>Seinen</b:widget-setting>
+      <b:widget-setting name='link-37'>search/label/Vampire</b:widget-setting>
+      <b:widget-setting name='text-29'>Shoujo</b:widget-setting>
+      <b:widget-setting name='link-36'>search/label/Vampire</b:widget-setting>
+      <b:widget-setting name='text-22'>Music</b:widget-setting>
+      <b:widget-setting name='link-31'>search/label/Slice of Life</b:widget-setting>
+      <b:widget-setting name='text-23'>Mystery</b:widget-setting>
+      <b:widget-setting name='link-30'>search/label/Shounen</b:widget-setting>
+      <b:widget-setting name='text-24'>Psychological</b:widget-setting>
+      <b:widget-setting name='link-33'>search/label/Supernatural</b:widget-setting>
+      <b:widget-setting name='text-25'>Romance</b:widget-setting>
+      <b:widget-setting name='link-32'>search/label/Sports</b:widget-setting>
+      <b:widget-setting name='text-9'>Historical</b:widget-setting>
+      <b:widget-setting name='text-8'>Harem</b:widget-setting>
+      <b:widget-setting name='text-20'>Medical</b:widget-setting>
+      <b:widget-setting name='text-21'>Military</b:widget-setting>
+      <b:widget-setting name='text-1'>Sample Page</b:widget-setting>
+      <b:widget-setting name='text-0'>Privacy Policy</b:widget-setting>
+      <b:widget-setting name='text-3'>Cooking</b:widget-setting>
+      <b:widget-setting name='text-2'>Comedy</b:widget-setting>
+      <b:widget-setting name='text-5'>Ecchi</b:widget-setting>
+      <b:widget-setting name='text-4'>Drama</b:widget-setting>
+      <b:widget-setting name='text-7'>Game</b:widget-setting>
+      <b:widget-setting name='text-6'>Fantasy</b:widget-setting>
+      <b:widget-setting name='text-19'>Mecha</b:widget-setting>
+      <b:widget-setting name='text-15'>Manhwa</b:widget-setting>
+      <b:widget-setting name='text-16'>Martial Arts</b:widget-setting>
+      <b:widget-setting name='text-17'>Mature</b:widget-setting>
+      <b:widget-setting name='text-18'>Mecha</b:widget-setting>
+      <b:widget-setting name='text-11'>Isekai</b:widget-setting>
+      <b:widget-setting name='text-12'>Josei</b:widget-setting>
+      <b:widget-setting name='text-13'>Magic</b:widget-setting>
+      <b:widget-setting name='text-14'>Manhua</b:widget-setting>
+      <b:widget-setting name='text-10'>Horror</b:widget-setting>
+      <b:widget-setting name='link-17'>/search/label/Mature</b:widget-setting>
+      <b:widget-setting name='link-16'>/search/label/Martial Arts</b:widget-setting>
+      <b:widget-setting name='link-19'>/search/label/Mecha</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='link-18'>/search/label/Mecha</b:widget-setting>
+      <b:widget-setting name='link-1'>https://#</b:widget-setting>
+      <b:widget-setting name='link-13'>/search/label/Magic</b:widget-setting>
+      <b:widget-setting name='link-2'>/search/label/Comedy</b:widget-setting>
+      <b:widget-setting name='link-12'>/search/label/Josei</b:widget-setting>
+      <b:widget-setting name='link-15'>/search/label/Manhwa</b:widget-setting>
+      <b:widget-setting name='link-0'>https://#</b:widget-setting>
+      <b:widget-setting name='link-14'>/search/label/Manhua</b:widget-setting>
+      <b:widget-setting name='link-11'>/search/label/Isekai</b:widget-setting>
+      <b:widget-setting name='link-10'>/search/label/Horror</b:widget-setting>
+      <b:widget-setting name='link-9'>/search/label/Historical</b:widget-setting>
+      <b:widget-setting name='link-7'>/search/label/Game</b:widget-setting>
+      <b:widget-setting name='link-8'>/search/label/Harem</b:widget-setting>
+      <b:widget-setting name='link-5'>/search/label/Ecchi</b:widget-setting>
+      <b:widget-setting name='link-6'>/search/label/Fantasy</b:widget-setting>
+      <b:widget-setting name='link-3'>/search/label/Cooking</b:widget-setting>
+      <b:widget-setting name='link-4'>/search/label/Drama</b:widget-setting>
+      <b:widget-setting name='link-28'>search/label/Seinen</b:widget-setting>
+      <b:widget-setting name='link-27'>search/label/Sci-Fi</b:widget-setting>
+      <b:widget-setting name='link-29'>search/label/Shoujo</b:widget-setting>
+      <b:widget-setting name='link-24'>search/label/Psychological</b:widget-setting>
+      <b:widget-setting name='text-37'>Vampire</b:widget-setting>
+      <b:widget-setting name='link-23'>/search/label/Mystery</b:widget-setting>
+      <b:widget-setting name='text-38'>Vampire</b:widget-setting>
+      <b:widget-setting name='link-26'>search/label/School Life</b:widget-setting>
+      <b:widget-setting name='link-25'>search/label/Romance</b:widget-setting>
+      <b:widget-setting name='link-20'>/search/label/Medical</b:widget-setting>
+      <b:widget-setting name='text-33'>Supernatural</b:widget-setting>
+      <b:widget-setting name='text-34'>Thriller</b:widget-setting>
+      <b:widget-setting name='link-22'>/search/label/Music</b:widget-setting>
+      <b:widget-setting name='text-35'>Tragedy</b:widget-setting>
+      <b:widget-setting name='link-21'>/search/label/Military</b:widget-setting>
+      <b:widget-setting name='text-36'>Vampire</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <b:class name='bg-accent'/>
+  <b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+ <div class='widget-content'>
+   <ul class='inline-flex'>
+     <b:loop values='data:links' var='link'>
+       <li><a class='block text-white py-[8px] px-[10px]' expr:href='data:link.target'><data:link.name/></a></li>
+     </b:loop>
+   </ul>
+ </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='Image1' locked='false' title='Logo' type='Image' version='2' visible='true'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEg3Z6fVFkRhuqlCRYC5jH3VJtl7oLrRLE6cG32tQhHWNqrFrUilzRlDpUXasTE3XPYeLSHBU9OFhzW3suSOiphsW3_Qx-n0bvDNWKIUwxEKEJxYifmn3nKnQ8J5SXYXm7uD9mUYB0Uu5aCyq7ynbWI4ZS9YfCkIW83H7qd91U99fp1YL8c_XJwf_x-6ow=s300</b:widget-setting>
+      <b:widget-setting name='displayHeight'>100</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>1076</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='displayWidth'>300</b:widget-setting>
+      <b:widget-setting name='link'>https://b-uikit.blogspot.com/</b:widget-setting>
+      <b:widget-setting name='caption'>Blogger UI Kit</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <b:include name='content'/>
+</b:includable>
+    <b:includable id='content'>
+  <div class='widget-content'>
+    <b:tag class='block' cond='data:link' expr:href='data:link' name='a'>
+      <img class='mx-auto' expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'>
+        <b:attr cond='data:sourceSet' expr:value='data:sourceSet' name='srcset'/>
+      </img>
+    </b:tag>
+    <b:if cond='data:caption'>
+      <span class='caption'><data:caption/></span>
+    </b:if>
+  </div>
+  <ul class='pt-[18px] [&amp;_li]:inline-block [&amp;_a]:inline-block'><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/.'>#</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/0-9'>0-9</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/A'>A</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/B'>B</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/C'>C</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/D'>D</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/E'>E</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/F'>F</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/G'>G</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/H'>H</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/I'>I</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/J'>J</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/K'>K</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/L'>L</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/M'>M</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/N'>N</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/O'>O</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/P'>P</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/Q'>Q</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/R'>R</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/S'>S</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/T'>T</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/U'>U</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/V'>V</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/W'>W</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/X'>X</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/Y'>Y</a></li><li class='mr-[10px] mb-[10px]'><a class='py-[4px] px-[9px] bg-accent text-white rounded-[2px] hover:bg-[#333]' href='/search/label/Z'>Z</a></li></ul>
+  <p>Copyright &#169; <script>document.write(new Date().getFullYear())</script> <data:blog.title/>. All Rights Reserved</p>
+  <p class='pb-[30px]'>Disclaimer: This site <i><data:blog.title/></i> does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+</b:includable>
+  </b:widget>
+</b:section>
+</footer>
