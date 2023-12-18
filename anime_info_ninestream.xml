@@ -41,7 +41,7 @@ section#info .info .meta a:hover{color:#713abf;}
 
 <!-- Paste di atas max-w mla mra pen c-999 full oh -->
 
-<section id='info' class='max-w mra mla bc-fff' itemscope='' itemtype='http://schema.org/Movie'>
+<section id='info' class='max-w mra mla bc-fff relative' itemscope='' itemtype='http://schema.org/Movie'>
                 <div class='thumb'>
                   <div>
                     <b:with value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, 600, &quot;1:2&quot;) : data:post.thumbnail' var='image'>
@@ -112,14 +112,14 @@ section#info .info .meta a:hover{color:#713abf;}
                       </span>
                     </div>  
                   </div>
-                </div>
-                <div class='clearfix'/>
-                <div class='meta tags'>
+                    <div class='meta tags'>
                   <div>Keywords: <span>
                     <b:include name='keywords'/>
                     </span>
                   </div>
                 </div>
+                </div>
+                <div class='clearfix'/>
               </section>
 
 
