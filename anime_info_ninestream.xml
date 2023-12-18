@@ -31,6 +31,13 @@ section#info .info .meta a:hover{color:#713abf;}
 .bookmarked{color:#ffd600;background:#5d0914;border:solid 1px #5d0914;-webkit-transition:all .2s;transition:all .2s;}
 .bookmarked::before{content:"";background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='24' height='24' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ffd600' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m4 12l6 6L20 6'/%3E%3C/svg%3E");background-size:24px auto;background-repeat:no-repeat;background-position:center right 1rem;}
 
+/* Progress */
+.progress{margin-bottom:1rem;position:relative;}
+.progress::before{content:'';position:absolute;left:0;top:0;width:100%;opacity:.5;}
+.progress::before,.progress span{display:block;height:.35rem;border-radius:.35rem;background-color:$(keycolor);}
+.fv .sx{background:var(--secondary);}
+.fv #main .sx{right:1%;width:22%;position:absolute;}
+.sx{padding:10px;border-radius:8px;}
 
 <!-- Paste di atas max-w mla mra pen c-999 full oh -->
 
@@ -57,14 +64,32 @@ section#info .info .meta a:hover{color:#713abf;}
                   <div class='meta' id='extra-target'>                  
                     <div class='type'>Type: 
                       <span>
-                        <b:comment><b:include name='type'/></b:comment>
+                        <b:loop index='i' values='data:post.labels' var='label'>
+                                        <b:if cond='data:label.name in data:Format'>
+                                          <a expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
+                                            <data:label.name/>
+                                          </a>
+                                        </b:if>
+                                      </b:loop>
                       </span>
                     </div>
                     <div>Genre: <span>
-                      <b:comment><b:include name='genre'/></b:comment>
+                      <b:loop index='i' values='data:post.labels' var='label'>
+                                <b:if cond='data:label.name in data:Genre or data:label.name in data:Genre2 or data:label.name in data:Demographic'>
+                                  <a class='' expr:href='data:label.url + &quot;?&amp;max-results=20&quot;' rel='tag'>
+                                    <data:label.name/>
+                                  </a>
+                                </b:if>
+                              </b:loop>
                       </span>
                     </div>
-                    <div class='status'>Status: <span><b:comment><b:include name='status'/></b:comment></span>
+                    <div class='status'>Status: <span><b:loop index='i' values='data:post.labels' var='label'>
+                                        <b:if cond='data:label.name in data:Status'>
+                                          <a expr:data='data:label.name' expr:href='data:label.url' rel='tag'>
+                                            <data:label.name/>
+                                          </a>
+                                        </b:if>
+                                      </b:loop></span>
                     </div>
                     <div>Country: <span>
                       <b:comment><b:include name='country'/></b:comment>
@@ -109,7 +134,7 @@ section#info .info .meta a:hover{color:#713abf;}
                   <b:if cond='data:string contains data:first + &quot;.&quot;'>
                     <b:loop values='data:checkNumber' var='last'>
                       <b:if cond='data:string contains &quot;.&quot; + data:last'>
-                        <aside class='score'>
+                        <aside class='sx'>
                           <script type='application/ld+json'>
   {
     &quot;@context&quot;: &quot;https://schema.org&quot;,
