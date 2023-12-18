@@ -2,22 +2,22 @@
 
 /*Manga Info */ 
 #info{padding:15px;border-radius:.3rem;margin-bottom:1.66rem;margin-top:1.66rem;}
-section#info .info .alias{color:#666;font-size:.85em;font-style:italic;}
-section#info .info .rating{float:right;margin-top:5px;margin-inline-start: 15px;}
-section#info .info p:not(.my-025){color:#666;font-size:.87em;margin-top:20px;}
+section#info .ani-info .alias{color:#666;font-size:.85em;font-style:italic;}
+section#info .ani-info .rating{float:right;margin-top:5px;margin-inline-start: 15px;}
+section#info .ani-info p:not(.my-025){color:#666;font-size:.87em;margin-top:20px;}
 section#info .tags{font-size:.8em;margin-top:15px;}
 .clearfix::after{display:block;clear:both;content:"";}
 section#info:after{display:block;clear:both;content:"";}
 section#info .thumb{width:22%;float:left;}
 section#info .thumb div:first-child{padding-bottom:140%;position:relative;overflow:hidden;border-radius:.3rem;}
 section#info .thumb div img{position:absolute;width:100%;height:100%;object-fit: cover;}
-section#info .info{margin-inline-start:24%;}
-section#info .info .title{margin:0;padding:0;text-transform:uppercase;font-size:1.28em;font-weight:400;}
-section#info .info .meta{color:#666;font-size:.85em;column-count: 2;column-width: 200px;}
-section#info .info .meta span{color:#ababab;margin-left:5px;}
-section#info .info .meta a{color:#927daf;}
-section#info .info .meta a:hover{color:#713abf;}
-@media screen and (max-width:576px){section#info .thumb{width:100%;}section#info .info{margin-left:0;}}
+section#info .ani-info{margin-inline-start:24%;}
+section#info .ani-info .title{margin:0;padding:0;text-transform:uppercase;font-size:1.28em;font-weight:400;}
+section#info .ani-info .meta{color:#666;font-size:.85em;column-count: 2;column-width: 200px;}
+section#info .ani-info .meta span{color:#ababab;margin-left:5px;}
+section#info .ani-info .meta a{color:#927daf;}
+section#info .ani-info .meta a:hover{color:#713abf;}
+@media screen and (max-width:576px){section#info .thumb{width:100%;}section#info .ani-info{margin-left:0;}}
 @-webkit-keyframes kfloading{0%,100%,80%{-webkit-transform:scale(0);}40%{-webkit-transform:scale(1);}}
 @keyframes kfloading{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);transform:scale(1);}}
 
@@ -54,7 +54,7 @@ section#info .info .meta a:hover{color:#713abf;}
                   </div>
                   <div class='bookmark' expr:data-id='data:post.id'>Bookmark</div>
                 </div>
-                <div class='info'>
+                <div class='ani-info'>
                   <div class='rating'>
                     <b:include name='ratingProgress'/>
                   </div>
