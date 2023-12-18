@@ -1,0 +1,163 @@
+<!-- Paste di atas /b:skin -->
+
+/*Manga Info */ 
+#info{padding:15px;border-radius:.3rem;margin-bottom:1.66rem;margin-top:1.66rem;}
+section#info .info .alias{color:#666;font-size:.85em;font-style:italic;}
+section#info .info .rating{float:right;margin-top:5px;margin-inline-start: 15px;}
+section#info .info p:not(.my-025){color:#666;font-size:.87em;margin-top:20px;}
+section#info .tags{font-size:.8em;margin-top:15px;}
+.clearfix::after{display:block;clear:both;content:"";}
+section#info:after{display:block;clear:both;content:"";}
+section#info .thumb{width:22%;float:left;}
+section#info .thumb div:first-child{padding-bottom:140%;position:relative;overflow:hidden;border-radius:.3rem;}
+section#info .thumb div img{position:absolute;width:100%;height:100%;object-fit: cover;}
+section#info .info{margin-inline-start:24%;}
+section#info .info .title{margin:0;padding:0;text-transform:uppercase;font-size:1.28em;font-weight:400;}
+section#info .info .meta{color:#666;font-size:.85em;column-count: 2;column-width: 200px;}
+section#info .info .meta span{color:#ababab;margin-left:5px;}
+section#info .info .meta a{color:#927daf;}
+section#info .info .meta a:hover{color:#713abf;}
+@media screen and (max-width:576px){section#info .thumb{width:100%;}section#info .info{margin-left:0;}}
+@-webkit-keyframes kfloading{0%,100%,80%{-webkit-transform:scale(0);}40%{-webkit-transform:scale(1);}}
+@keyframes kfloading{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);transform:scale(1);}}
+
+/* Bookmark */ 
+.numshow{margin-top:-10px;}
+.bookmark{color:yellow;font-size:.8rem;border:solid 1px yellow;border-radius:5px;text-align:center;padding:0;height:45px;line-height:45px;cursor:pointer;font-weight:300;margin:5px 0;text-transform:uppercase;letter-spacing:.2rem;outline:none;display:block;-webkit-transition:all .2s;transition:all .2s;font-family:Roboto,Sans-Serif;}
+.bookmark{background:#191919;-webkit-transition:all .2s;transition:all .2s;border:solid 1px yellow;}
+.bookmark::before{content:"";position:relative;margin-bottom:-44px;width:100%;height:100%;display:block;top:0;right:0;will-change:auto;}
+.bookmark::before{content:"";background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='24' height='24' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ffd600' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m16 6l4 14M12 6v14M8 8v12M4 4v16'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:24px auto;background-position:center right 1rem;}
+.bookmark:hover{background:yellow;border:solid 1px yellow;color:#191919;letter-spacing:.1rem;-webkit-transition:all .2s;transition:all .2s;}
+.bookmarked{color:#ffd600;background:#5d0914;border:solid 1px #5d0914;-webkit-transition:all .2s;transition:all .2s;}
+.bookmarked::before{content:"";background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='24' height='24' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23ffd600' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m4 12l6 6L20 6'/%3E%3C/svg%3E");background-size:24px auto;background-repeat:no-repeat;background-position:center right 1rem;}
+
+
+<!-- Paste di atas max-w mla mra pen c-999 full oh -->
+
+<section id='info' class='max-w mra mla bc-fff' itemscope='' itemtype='http://schema.org/Movie'>
+                <div class='thumb'>
+                  <div>
+                    <b:with value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, 600, &quot;1:2&quot;) : data:post.thumbnail' var='image'>
+                      <b:if cond='data:post.featuredImage'>
+                        <img expr:alt='data:post.title' expr:src='data:image' itemprop='image' loading='lazy'/>
+                        <b:else/>
+                        <span class='post-thumb'>No image</span>
+                      </b:if>
+                    </b:with>
+                  </div>
+                  <div class='bookmark' expr:data-id='data:post.id'>Bookmark</div>
+                </div>
+                <div class='info'>
+                  <div class='rating'>
+                    <b:include name='ratingProgress'/>
+                  </div>
+                  <h1 class='title' expr:title='data:post.title' itemprop='name'><data:post.title/></h1>
+                  <p class='alias m-0'><data:blog.metaDescription/></p>
+                  <div class='shorting' id='syn-target'/>
+                  <div class='meta' id='extra-target'>                  
+                    <div class='type'>Type: 
+                      <span>
+                        <b:comment><b:include name='type'/></b:comment>
+                      </span>
+                    </div>
+                    <div>Genre: <span>
+                      <b:comment><b:include name='genre'/></b:comment>
+                      </span>
+                    </div>
+                    <div class='status'>Status: <span><b:comment><b:include name='status'/></b:comment></span>
+                    </div>
+                    <div>Country: <span>
+                      <b:comment><b:include name='country'/></b:comment>
+                      </span>
+                    </div>    
+                    <div>Episode: <span>
+                      <b:with value='[&quot;Episode&quot;, &quot;Eps&quot;, &quot;Ep&quot;]' var='checkEpisode'>
+                        <b:if cond='data:post.labels'>
+                          <b:loop values='data:post.labels' var='item'>
+                            <b:with value='&quot;String: &quot; + data:item.name' var='string'>
+                              <b:loop values='data:checkEpisode' var='first'>
+                                <b:if cond='data:string contains data:first + &quot; &quot;'>
+                                  <span class='eps'><data:item.name/></span>
+                                </b:if>
+                              </b:loop>
+                            </b:with>
+                          </b:loop>
+                        </b:if>
+                      </b:with>
+                      </span>
+                    </div>  
+                  </div>
+                </div>
+                <div class='clearfix'/>
+                <div class='meta tags'>
+                  <div>Keywords: <span>
+                    <b:include name='keywords'/>
+                    </span>
+                  </div>
+                </div>
+              </section>
+
+
+<!-- Paste di bawah <b:defaultmarkup type='Common'> -->
+
+<b:includable id='ratingProgress'>
+        <b:with value='[&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;]' var='checkNumber'>
+          <b:if cond='data:post.labels'>
+            <b:loop values='data:post.labels' var='item'>
+              <b:with value='&quot;String: &quot; + data:item.name' var='string'>
+                <b:loop values='data:checkNumber' var='first'>
+                  <b:if cond='data:string contains data:first + &quot;.&quot;'>
+                    <b:loop values='data:checkNumber' var='last'>
+                      <b:if cond='data:string contains &quot;.&quot; + data:last'>
+                        <aside class='score'>
+                          <script type='application/ld+json'>
+  {
+    &quot;@context&quot;: &quot;https://schema.org&quot;,
+    &quot;@type&quot;: &quot;CreativeWorkSeries&quot;,
+    &quot;url&quot;: &quot;<data:blog.url/>&quot;,
+    &quot;name&quot;: &quot;<data:blog.pageTitle/>&quot;,
+    &quot;alternateName&quot;: &quot;<data:blog.pageTitle/>&quot;,
+    &quot;description&quot;: &quot;<data:post.snippets.short/>&quot;,
+    &quot;inLanguage&quot;: &quot;<data:blog.locale/>&quot;,
+    &quot;aggregateRating&quot;: {
+    	&quot;@type&quot;: &quot;AggregateRating&quot;,
+    	&quot;ratingValue&quot;: &quot;<data:item.name/>&quot;,
+    	&quot;bestRating&quot;: &quot;10&quot;,
+    	&quot;worstRating&quot;: &quot;1&quot;,
+   	&quot;ratingCount&quot;: &quot;<data:post.body.size/>&quot;,
+    	&quot;reviewCount&quot;: &quot;<data:post.body.size/>&quot;
+  },
+    &quot;author&quot;: {&quot;@type&quot;: &quot;Person&quot;, &quot;name&quot;: &quot;<data:post.author.name/>&quot;},
+    &quot;publisher&quot;: {&quot;@type&quot;: &quot;Organization&quot;, &quot;name&quot;: &quot;<data:blog.title/>&quot;}
+    }
+  }
+</script>
+                          <p class='mb-05 text-1d5 fw-700 lh-1d4 my-025'><data:item.name/> <span class='c-959 text-075 fw-400'>
+                            <span><data:post.body.size/></span> vote</span>
+                          </p>
+                          <div class='progress'><span class='all-03s' expr:style='&quot;width:calc(100% / 10 * &quot; + data:item.name + &quot;)&quot;'/></div>
+                        </aside>  
+                      </b:if>
+                    </b:loop>
+                  </b:if>
+                </b:loop>
+              </b:with>
+            </b:loop>
+          </b:if>
+        </b:with>
+      </b:includable>
+<b:includable id='keywords'>
+            <style><b:eval expr='&quot;#&quot; + data:widget.instanceId + &quot;-w&quot;'/> ~ :is(ul,span) {
+max-height: 0;overflow: hidden;transition: max-height .2s;}
+<b:eval expr='&quot;#&quot; + data:widget.instanceId + &quot;-w:checked&quot;'/> ~ :is(ul,span) {
+ max-height: 100vh;transition: max-height .2s;display: inline;}
+#Blog1-w:checked ~ .plus {display: none;}</style>
+              Watch online <b><data:post.title/></b> bahasa Indonesia,  
+            Streaming anime <data:post.title/> sub indo,
+            <input class='hidden' expr:id='data:widget.instanceId + &quot;-w&quot;' type='checkbox'/>
+            <label class='cp more plus' expr:for='data:widget.instanceId + &quot;-w&quot;'>+more</label><span class='i-block'>
+            Mau nonton anime terbaik dengan subtitle Indonesia? Streaming anime Jepang dari anime <data:post.title/>,
+            website streaming anime subtitle indonesia dan nonton anime indo update setiap hari, TV <data:post.title/>,
+            Terbaru Terupdate dan Terlengkap dengan Kualitas 1080p, 720p. 480p, 360p Anime Sub Indo.
+            <label class='cp more minus' expr:for='data:widget.instanceId + &quot;-w&quot;'>-less</label></span>
+                            </b:includable>
